@@ -1,0 +1,4 @@
+
+FROM registry.access.redhat.com/ubi8/openjdk-11
+
+COPY --chown=1001 target/quarkus-app /deployments/
