@@ -12,7 +12,7 @@ public class GreetingResourceTest {
     @Test
     public void testIndexEndpoint() {
         given()
-                .when().get("/index")
+                .when().get("/api/index")
                 .then()
                 .statusCode(200)
                 .body(is("qotd"));
